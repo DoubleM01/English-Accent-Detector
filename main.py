@@ -17,7 +17,7 @@ progress = {}
 ecapa = EncoderClassifier.from_hparams(
     source="Jzuluaga/accent-id-commonaccent_ecapa",
     savedir="ecapa_model",
-    run_opts={"device":"cuda"}
+    run_opts={"device":"cpu"}
 )
 
 def download_and_classify(url: str, task_id: str):
