@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accent Detector</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div class="container">
+    <h1><span class="logo-gradient">Accent Detector</span></h1>
+    <div class="card">
+      <input id="videoUrl" type="text" placeholder="Paste video URL here" />
+      <button id="startBtn">Analyze Accent</button>
+      <div id="progressBar">
+        <div id="progress"></div>
+      </div>
+      <div id="status"></div>
+      <div id="result"></div>
+      <div id="circle-container" style="display:none;">
+  <svg id="confidenceCircle" width="120" height="120">
+    <circle cx="60" cy="60" r="54" stroke="#e0e0e0" stroke-width="10" fill="none"/>
+    <circle id="progressCircle" cx="60" cy="60" r="54" stroke="#6a11cb" stroke-width="10" fill="none"
+            stroke-linecap="round" stroke-dasharray="339.292" stroke-dashoffset="339.292" />
+    <text id="confidenceText" x="60" y="68" text-anchor="middle" font-size="2.1em" font-weight="bold" fill="#2575fc">0%</text>
+  </svg>
+
+
+  <div class="circle-label">Confidence</div>
+</div>
+
+    </div>
+    <footer>
+      <span>🌐 Developed by: Mahmoud Mohamed (DoubleM)</span>
+    </footer>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
