@@ -4,7 +4,7 @@
 [![SpeechBrain](https://img.shields.io/badge/Speech-Accent_ID-blueviolet?style=flat-square)](https://speechbrain.readthedocs.io/en/latest/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A modern, web-based application for automatic **English accent detection** using deep learning.  
+A modern, web-based application for automatic **English accent detection** using AI.  
 Built with **FastAPI**, **SpeechBrain ECAPA**, and **yt-dlp** for robust and flexible audio extraction and classification.
 
 ---
@@ -63,6 +63,12 @@ Visit: [http://localhost:8000/index.html](http://localhost:8000/index.html)
     - **Confidence Score** as a circular chart
 
 > **Note:** Only public videos are supported. Restricted or login-required content will not work.
+
+
+## 🛠️Script-based demo:
+```bash
+python demo.py
+```
 
 ---
 
