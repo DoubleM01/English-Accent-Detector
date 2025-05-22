@@ -17,7 +17,7 @@ progress = {}
 ecapa = EncoderClassifier.from_hparams(
     source="Jzuluaga/accent-id-commonaccent_ecapa",
     savedir="ecapa_model",
-    run_opts={"device":"cpu"}
+    run_opts={"device":"auto"}
 )
 
 def download_and_classify(url: str, task_id: str):
@@ -66,6 +66,6 @@ async def progress_stream(task_id: str):
 async def root():
     return FileResponse("static/index.html")
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
