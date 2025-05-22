@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+sse-starlette
+yt-dlp
+speechbrain
+torch
+torchaudio
